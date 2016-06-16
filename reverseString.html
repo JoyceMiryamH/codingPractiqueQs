@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    s = window.prompt("give the string to be reversed");
+    reverseString(s);
+    function reverseString(s) {
+      var t = "";
+      for (var index=s.length-1; index>=0; index--)
+      {
+        t = t + s[index];
+      }
+      document.write(t);
+      return t;
+    };
+  </script>
+</head>
+<body>
+  <p>Problem: Reversing a string</p>
+  <p>Level: easy</p>
+</body></html>
