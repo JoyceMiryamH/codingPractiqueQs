@@ -1,2 +1,2 @@
 # codingPractiqueQs
-Repository of my completed practice coding questions
+Repository of my completed practice coding questions written in JAVASCRIPT
