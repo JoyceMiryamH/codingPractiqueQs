@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    var arrayOfInts = [1, 2, 9, 4, 5, 7, 6, 8];
+    highestProduct(arrayOfInts);
+    function highestProduct(arrayOfInts) {
+      var high1 = arrayOfInts.length-3;
+      var high2 = arrayOfInts.length-2;
+      var high3 = arrayOfInts.length-1;
+
+      for (var i = arrayOfInts.length-1; i >= 0; i--)
+        {
+          for (var j = 0; j <= i; j++) {
+            if (arrayOfInts[j] > arrayOfInts[i])
+            {
+              var temp = arrayOfInts[j];
+              arrayOfInts[j] = arrayOfInts[i];
+              arrayOfInts[i] = temp;
+            }
+          }
+        }
+        var hproduct = arrayOfInts[high1] * arrayOfInts[high2] * arrayOfInts[high3];
+        document.write(hproduct);
+        return hproduct;
+      }
+  </script>
+</head>
+<body>
+  <p>Given an arrayOfInts, find the highestProduct you can get from three of the integers.</p>
+</body></html>
