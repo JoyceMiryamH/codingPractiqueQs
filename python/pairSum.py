@@ -1,3 +1,5 @@
+# Given an integer array, output all pairs that sum up to a specific value k.
+
 def pairSum(arr, k):
     if len(arr) < 2:
         return
