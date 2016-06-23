@@ -1,5 +1,6 @@
 # Find the first non-repeated (unique) character in a given string.
 # efficient use of a hashtable needed.
+import collections
 
 def firstUnique(str):
     count=collections.defaultdict(int)
